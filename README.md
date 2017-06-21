@@ -6,7 +6,7 @@ Pytorch implementation of [f-GANs in an Information Geometric Nutshell](http://a
 
 - Python 2.7
 - [Pytorch 0.1.12](http://pytorch.org)
-- [numpy 1.12.1] (http://www.numpy.org/)
+- [numpy 1.12.1](http://www.numpy.org/)
 
 
 ## Usage
