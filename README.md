@@ -16,13 +16,13 @@ Put both mnist and lsun in a folder called DATA_ROOT. Download lsun with https:/
     $ python download.py -o <DATA_ROOT> -c tower
 
 
-Assume all experimental results are put in EXPERIMENTAL_RESULTS, evaluate models with the downloaded datasets.
+Assume all experimental results are put in EXPERIMENTAL_RESULTS.
 
-Evaluate a model with a feedforward network, wasserstein GAN, and mu-ReLU:
+Evaluate a feedforward network with wasserstein GAN loss and mu-ReLU as the activation of hidden layers of the generator:
 
     $ python main.py --dataset mnist --dataroot <DATA_ROOT> --cuda -D wgan -A mlp -H murelu --experiment <EXPERIMENTAL_RESULTS> --task mu
 
-Evaluate a model with DCGAN, GAN, and mu-ReLU:
+Evaluate DCGAN with GAN as the loss, and mu-ReLU as the activation of hidden layers of the generator:
 
     $ python main.py --dataset lsun --subset tower --dataroot <DATA_ROOT> --cuda -D gan -A dcgan -H murelu --experiment <EXPERIMENTAL_RESULTS> --task mu
 
